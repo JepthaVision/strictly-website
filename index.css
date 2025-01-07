@@ -1,0 +1,17 @@
+.green {
+    color:green;
+}
+
+.image {
+    display:block;
+    margin: auto;
+    margin-top:5%;
+    width:25%;
+    height:auto;
+}
+
+.text {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:powderblue;
+    text-align: center;
+}

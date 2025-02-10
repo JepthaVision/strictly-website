@@ -3,6 +3,7 @@
 .button {
     width: 200px;
     height: 50px;
+    background-color: darkgray;
 }
 
 .container {
@@ -11,21 +12,38 @@
     padding: 10px;
 }
 
-.text {
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:powderblue;
-    text-align: center;
+}
+
+.body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 1000px;
+    color:white;
+    line-height: 150%;
 }
 
 /* Specific classes */
 
-.banner {
-    width: 100%;
+.background {
+    background-color: black;
+}
+
+.logo {
+    width: 300px;
     display: flex;
+    padding-top: 100px;
 }
 
 .bar {
-    background-color:lightgrey;
+    background-color:dimgray;
 }
 
 .fliers {

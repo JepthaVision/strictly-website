@@ -1,9 +1,14 @@
 /* Generic classes */
 
 .button {
-    width: 200px;
+    border-radius: 2em;
+    color: white;
+    background-color:cadetblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
     height: 50px;
-    background-color: darkgray;
+    width: 100px;
 }
 
 .center {
@@ -11,15 +16,25 @@
     justify-content: center;
 }
 
+.center-text{
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
 .chunk {
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 
 .header {
     color:powderblue;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
 }
 
 .body {
@@ -36,6 +51,30 @@
     background-color: black;
 }
 
+.background-image {
+    background-image: url(assets/photos/Frame02523905.jpg);
+    margin-top: -50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    width:auto;
+}
+
+.social {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.icon {
+    background: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+
 .logo {
     display: flex;
     width: 400px;
@@ -43,15 +82,17 @@
 }
 
 .photo {
-    margin-top: -300px;
+    margin-top: 000px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
     gap: 50px;
-    margin-top: -50px;
-    width: 700px;
+}
+
+.tickets {
+    font-size: 2em;
+    height: 100px;
+    width: 300px;
 }
 
 .contact {
@@ -73,4 +114,9 @@
 .box {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+
+.copyright {
+    color: dimgray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

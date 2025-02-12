@@ -43,25 +43,37 @@
     text-align: center;
 }
 
+.medium{
+    font-size: 150%;
+}
+
 .header {
     color:powderblue;
+    text-decoration: underline;
+    text-underline-offset: 30%;
+}
+
+.subheader {
+    color: powderblue;
 }
 
 .body {
     line-height: 150%;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
     text-indent: 2em;
 }
 
 .subtle {
     color: dimgray;
+    padding: 2em;
 }
 
 /* Specific classes */
 
 .background {
     background-color: black;
-    background-image: url(assets/photos/Frame02523905.jpg);
+    background-image: url(assets/photos/poster2.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -77,58 +89,56 @@
     display: flex;
     align-items: end;
     justify-content: right;
-    gap: 10px;
-    padding: 10px;
-    z-index: 1;
+    gap: 0.5em;
+    padding-top: 0.5em;
 }
 
 .icon {
     background: none;
     border: none;
-    height: 30px;
-    width: 30px;
+    height: 2em;
 }
 
 .logo {
     display: flex;
     margin-bottom: 3em;
     width: 400px;
-    z-index: 1;
 }
 
 .video-container {
     position: relative;
-    width: 100%; /* Video will take up full width of its container */
-    padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio */
-    height: 0; /* Sets height to 0 for positioning */
-    overflow: hidden; /* Ensures the video doesn't overflow */
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
 }
 
 .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Scales to fit the container's width */
-    height: 100%; /* Scales to maintain aspect ratio */
+    width: 100%;
+    height: 100%;
 }
 
 .tickets {
     font-size: 2em;
-    height: 100px;
+    padding: 1em;
+    height: auto;
     margin-bottom: 1em;
-    width: 300px;
+    width: auto;
 }
 
-.input {
-    width: 30%;
-}
+@media (max-width: 830px) {
+    .container {
+        width: 98%;
+    }
 
-.message {
-    width: 100%;
-    height: 80px;
-}
+    .logo {
+        width: 50%;
+    }
 
-.box {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    .background {
+        background-attachment: unset;
+    }
 }

@@ -16,52 +16,66 @@
     justify-content: center;
 }
 
-.center-text{
-    text-align: center;
-}
-
 .column {
     display: flex;
     flex-direction: column;
-    width: 700px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .chunk {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%, transparent);
+    padding-bottom: 1em;
+    padding-inline: 2em;
+}
+
+/* Text styles */
+
+.text {
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.big{
+    text-align: center;
 }
 
 .header {
     color:powderblue;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .body {
-    color:white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 150%;
     margin-bottom: 2em;
     text-indent: 2em;
+}
+
+.subtle {
+    color: dimgray;
 }
 
 /* Specific classes */
 
 .background {
     background-color: black;
-}
-
-.background-image {
     background-image: url(assets/photos/Frame02523905.jpg);
-    margin-top: -50px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     width:auto;
 }
 
-.social {
+.container {
+    gap: 1em;
+    width: 800px;
+}
+
+.social-links {
     display: flex;
+    align-items: end;
     justify-content: right;
     gap: 10px;
     padding: 10px;
@@ -77,29 +91,32 @@
 
 .logo {
     display: flex;
+    margin-bottom: 3em;
     width: 400px;
     z-index: 1;
 }
 
-.photo {
-    margin-top: 000px;
+.video-container {
+    position: relative;
+    width: 100%; /* Video will take up full width of its container */
+    padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio */
+    height: 0; /* Sets height to 0 for positioning */
+    overflow: hidden; /* Ensures the video doesn't overflow */
 }
 
-.container {
-    gap: 50px;
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Scales to fit the container's width */
+    height: 100%; /* Scales to maintain aspect ratio */
 }
 
 .tickets {
     font-size: 2em;
     height: 100px;
+    margin-bottom: 1em;
     width: 300px;
-}
-
-.contact {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .input {
@@ -114,9 +131,4 @@
 .box {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-}
-
-.copyright {
-    color: dimgray;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

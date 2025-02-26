@@ -129,6 +129,38 @@
     width: auto;
 }
 
+.album-container {
+    position: relative;
+    padding: 0.3em;
+    width: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.album-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-container a {
+    text-decoration: none;
+}
+
 @media (max-width: 830px) {
     .container {
         width: 98%;

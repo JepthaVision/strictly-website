@@ -32,6 +32,10 @@
     padding-inline: 2em;
 }
 
+.image {
+    width: 50%;
+}
+
 /* Text styles */
 
 .text {

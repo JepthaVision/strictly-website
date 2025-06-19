@@ -1,153 +1,92 @@
-/* Generic classes */
-
-.button {
-    border-radius: 2em;
-    color: white;
-    background-color:cadetblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
-    font-weight: bold;
-    height: 50px;
-    width: 100px;
-}
+/* ALIGNMENT */
 
 .center {
     display: flex;
     justify-content: center;
 }
-
 .column {
     display: flex;
     flex-direction: column;
 }
-
 .row {
     display: flex;
+    flex-direction: row;
+}
+.padded {
+    padding-bottom: 2em;
+}
+.space {
+    justify-content: space-evenly;
+}
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    gap: 30px;
     justify-content: space-between;
 }
 
-.chunk {
-    background: linear-gradient(to right, transparent, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%, transparent);
-    padding-bottom: 1em;
-    padding-inline: 2em;
-}
-
-.image {
-    width: 50%;
-}
-
-/* Text styles */
+/* TEXT */
 
 .text {
     color:white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 .big{
     text-align: center;
 }
-
-.medium{
+.medium {
     font-size: 150%;
 }
-
 .header {
     color:powderblue;
     text-decoration: underline;
     text-underline-offset: 30%;
 }
-
 .subheader {
     color: powderblue;
 }
-
 .body {
     line-height: 150%;
     margin-bottom: 1em;
     margin-top: 1em;
     text-indent: 2em;
 }
-
 .subtle {
     color: dimgray;
     padding: 2em;
 }
 
-/* Specific classes */
 
-.background {
-    background-color: black;
-    background-image: url(assets/photos/poster2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    width:auto;
+
+/* BUTTONS */
+
+.nav {
+    gap: 2em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-    gap: 1em;
-    width: 800px;
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+    color: white;
+    background-color:cadetblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+    height: 200%;
+    width: 150px;
 }
-
-.social-links {
-    display: flex;
-    align-items: end;
-    justify-content: right;
-    gap: 0.5em;
-    padding-top: 0.5em;
+.active {
+    background-color: white;
+    color: cadetblue;
 }
-
-.icon {
-    background: none;
-    border: none;
-    height: 2em;
-}
-
-.logo {
-    display: flex;
-    margin-bottom: 3em;
-    width: 400px;
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.tickets {
-    font-size: 2em;
-    padding: 1em;
-    height: auto;
-    margin-bottom: 1em;
-    width: auto;
-}
-
-.album-container {
-    position: relative;
-    padding: 0.3em;
-    width: auto;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.album-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .play-button {
     position: absolute;
     top: 50%;
@@ -161,19 +100,99 @@
     align-items: center;
 }
 
+
+
+/* CONTAINERS */
+
+.music-links {
+    gap: 1em;
+}
+.music-link {
+    height: 3em;
+}
+.background {
+    background-color: black;
+    background-image: url(../assets/images/background2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    width:auto;
+}
+.chunk {
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%, transparent);
+    padding-bottom: 1em;
+    padding-inline: 2em;
+}
+.container {
+    gap: 1em;
+    width: 800px;
+}
+.social-links {
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    gap: 0.5em;
+    padding-top: 0.5em;
+}
+.icon {
+    background: none;
+    border: none;
+    height: 2em;
+}
+.logo {
+    display: flex;
+    margin-bottom: 3em;
+    width: 400px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.tickets {
+    font-size: 2em;
+    padding: 1em;
+    height: auto;
+    margin-bottom: 1em;
+    width: auto;
+}
+.album-container {
+    position: relative;
+    padding: 0.3em;
+    width: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.album-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .album-container a {
     text-decoration: none;
 }
+
+
+
+/* MOBILE */
 
 @media (max-width: 830px) {
     .container {
         width: 98%;
     }
-
     .logo {
         width: 50%;
     }
-
     .background {
         background-attachment: unset;
     }

@@ -1,24 +1,32 @@
-/* ALIGNMENT */
+
+body {
+    background-color: black;
+    background-image: url(../assets/images/background2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    width: auto;
+}
+
 
 .center {
     display: flex;
     justify-content: center;
 }
-.column {
+.container {
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
-.row {
+.section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%, transparent);
+    padding-inline: 2em;
 }
-.padded {
-    padding-bottom: 2em;
-}
-.space {
-    justify-content: space-evenly;
-}
-.portfolio {
+.shelf {
     display: flex;
     flex-wrap: wrap;
     padding-top: 1em;
@@ -26,32 +34,67 @@
     gap: 30px;
     justify-content: space-between;
 }
+.page {
+    width: 800px;
+}
+
+
+.social-links {
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    gap: 0.5em;
+    padding-top: 0.5em;
+}
+.social-icon {
+    background: none;
+    border: none;
+    height: 2em;
+}
+.logo-giff {
+    display: flex;
+    margin-bottom: 3em;
+    width: 400px;
+}
+.nav-bar {
+    display: flex;
+    padding: 2em;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.music-links {
+    gap: 1em;
+    padding-bottom: 1em;
+}
+.music-icon {
+    height: 3em;
+}
+
 
 /* TEXT */
-
-.text {
-    color:white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 .big{
     text-align: center;
-}
-.medium {
-    font-size: 150%;
+    font-size: x-large;
 }
 .header {
-    color:powderblue;
+    color: powderblue;
     text-decoration: underline;
     text-underline-offset: 30%;
 }
-.subheader {
-    color: powderblue;
-}
-.body {
+.p {
     line-height: 150%;
-    margin-bottom: 1em;
-    margin-top: 1em;
     text-indent: 2em;
+}
+.link{
+    color: white;
 }
 .subtle {
     color: dimgray;
@@ -59,16 +102,7 @@
 }
 
 
-
 /* BUTTONS */
-
-.nav {
-    gap: 2em;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .button {
     display: inline-flex;
     align-items: center;
@@ -77,11 +111,11 @@
     color: white;
     background-color:cadetblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: medium;
+    font-size: large;
     font-weight: bold;
     text-decoration: none;
     height: 200%;
-    width: 150px;
+    width: 4em;
 }
 .active {
     background-color: white;
@@ -101,49 +135,7 @@
 }
 
 
-
-/* CONTAINERS */
-
-.music-links {
-    gap: 1em;
-}
-.music-link {
-    height: 3em;
-}
-.background {
-    background-color: black;
-    background-image: url(../assets/images/background2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    width:auto;
-}
-.chunk {
-    background: linear-gradient(to right, transparent, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%, transparent);
-    padding-bottom: 1em;
-    padding-inline: 2em;
-}
-.container {
-    gap: 1em;
-    width: 800px;
-}
-.social-links {
-    display: flex;
-    align-items: end;
-    justify-content: right;
-    gap: 0.5em;
-    padding-top: 0.5em;
-}
-.icon {
-    background: none;
-    border: none;
-    height: 2em;
-}
-.logo {
-    display: flex;
-    margin-bottom: 3em;
-    width: 400px;
-}
+/* SPECIAL */
 .video-container {
     position: relative;
     width: 100%;
@@ -172,6 +164,7 @@
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding-bottom: 2em;
 }
 .album-container img {
     width: 100%;
@@ -183,17 +176,15 @@
 }
 
 
-
 /* MOBILE */
-
 @media (max-width: 830px) {
     .container {
         width: 98%;
     }
-    .logo {
+    .logo-giff {
         width: 50%;
     }
-    .background {
+    body {
         background-attachment: unset;
     }
 }

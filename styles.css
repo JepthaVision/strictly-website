@@ -25,14 +25,15 @@ body {
     flex-direction: column;
     background: linear-gradient(to right, transparent, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%, transparent);
     padding-inline: 2em;
+    padding-bottom: 1em;
+    border-radius: 5px;
 }
 .shelf {
     display: flex;
     flex-wrap: wrap;
     padding-top: 1em;
     padding-bottom: 1em;
-    gap: 30px;
-    justify-content: space-between;
+    gap: 65px;
 }
 .page {
     width: 800px;
@@ -53,12 +54,11 @@ body {
 }
 .logo-giff {
     display: flex;
-    margin-bottom: 3em;
     width: 400px;
 }
 .nav-bar {
     display: flex;
-    padding: 2em;
+    padding-bottom: 4em;
 }
 .nav-list {
     display: flex;
@@ -82,7 +82,7 @@ body {
 /* TEXT */
 .big{
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
 }
 .header {
     color: powderblue;

@@ -35,6 +35,12 @@ body {
     padding-bottom: 1em;
     gap: 65px;
 }
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 20px;
+}
 .page {
     width: 800px;
 }
